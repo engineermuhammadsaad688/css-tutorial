@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Layout</title>
+  <style>
+body {
+  margin: 0;
+  padding: 0; 
+  font-family: 'Arial', sans-serif; 
+}
+
+
+    .main-container {      
+      background-color: purple;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      gap:10px;
+    }
+  
+    .card {
+      box-sizing: border-box; /* Includes padding and borders in the element's width/height */
+      width: calc(33.33% - 20px); /* Adjust width to account for gap and padding */
+      height: 150px;
+      border-radius: 8px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+
+    .card1 { background-color: #e74c3c; }
+    .card2 { background-color: #3498db; }
+    .card3 { background-color: #2ecc71; }
+    .card4 { background-color: #f1c40f; }
+    .card5 { background-color: #9b59b6; }
+    .card6 { background-color: #e67e22; }
+
+
+
+    /* Medium screens: 2 cards per row */
+    @media (max-width: 768px) {
+      .card {
+        width: calc(50% - 15px); /* Adjust for the gap */
+      }
+    }
+  
+    /* Small screens: 1 card per row */
+    @media (max-width: 480px) {
+      .card {
+        width: 100%;
+      }
+    }
+  
+
+  </style>
+  
+</head>
+<body>
+
+  <div class="main-container">
+    <div class="card card1">Card 1</div>
+    <div class="card card2">Card 2</div>
+    <div class="card card3">Card 3</div>
+    <div class="card card4">Card 4</div>
+    <div class="card card5">Card 5</div>
+    <div class="card card6">Card 6</div>
+  </div>
+
+</body>
+</html>
