@@ -2,72 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Card Layout</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Screen Layout with Sidebar and Cards</title>
   <style>
-body {
-  margin: 0;
-  padding: 0; 
-  font-family: 'Arial', sans-serif; 
-}
-
-
-    .main-container {      
-      background-color: purple;
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 10px;
-      gap:10px;
+      height: 100vh;
+      flex-direction: column;
     }
-  
-    .card {
-      box-sizing: border-box; /* Includes padding and borders in the element's width/height */
-      width: calc(33.33% - 20px); /* Adjust width to account for gap and padding */
-      height: 150px;
-      border-radius: 8px;
+
+    /* Fullscreen Layout */
+    .main-container {
+      display: flex;
+      flex-grow: 1;
+      height: 100%;
+    }
+
+    /* Header */
+    .header {
+      background-color: purple;
       color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: #2ecc71;
+      color: white;
+      width: 250px;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #3498db;
+      text-align: center;
+    }
+
+    .sidebar a:hover {
+      background-color: #1abc9c;
+    }
+
+    /* Main Panel */
+    .main-panel {
+      background-color: #f1c40f;
+      flex-grow: 1;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    /* Card Styling */
+    .card {
+      background-color: #e74c3c;
+      color: white;
+      width: calc(25% - 20px);
+      height: 200px;
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 8px;
     }
-  
 
-    .card1 { background-color: #e74c3c; }
-    .card2 { background-color: #3498db; }
-    .card3 { background-color: #2ecc71; }
-    .card4 { background-color: #f1c40f; }
-    .card5 { background-color: #9b59b6; }
-    .card6 { background-color: #e67e22; }
+    /* Footer */
+    .footer {
+      background-color: purple;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
 
-
-
-    /* Medium screens: 2 cards per row */
+    /* Media Queries */
+    /* For medium screens (tablets) */
     @media (max-width: 768px) {
-      .card {
-        width: calc(50% - 15px); /* Adjust for the gap */
+      .sidebar {
+        width: 200px;
       }
-    }
-  
-    /* Small screens: 1 card per row */
-    @media (max-width: 480px) {
-      .card {
-        width: 100%;
-      }
-    }
-  
 
+      .card {
+        width: calc(50% - 20px); /* 2 cards per row */
+      }
+    }
+
+    /* For small screens (mobiles) */
+    @media (max-width: 480px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .main-panel {
+        flex-direction: column;
+      }
+
+      .card {
+        width: 100%; /* 1 card per row */
+        height: 150px;
+      }
+    }
   </style>
-  
 </head>
 <body>
 
+  <div class="header">
+    <h1>Full Screen Webpage</h1>
+  </div>
+
   <div class="main-container">
-    <div class="card card1">Card 1</div>
-    <div class="card card2">Card 2</div>
-    <div class="card card3">Card 3</div>
-    <div class="card card4">Card 4</div>
-    <div class="card card5">Card 5</div>
-    <div class="card card6">Card 6</div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+    </div>
+
+    <!-- Main Panel -->
+    <div class="main-panel">
+      <div class="card">Card 1</div>
+      <div class="card">Card 2</div>
+      <div class="card">Card 3</div>
+      <div class="card">Card 4</div>
+      <div class="card">Card 5</div>
+      <div class="card">Card 6</div>
+      <div class="card">Card 7</div>
+      <div class="card">Card 8</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Website Footer</p>
   </div>
 
 </body>

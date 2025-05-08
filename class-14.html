@@ -4,15 +4,18 @@
   <meta charset="UTF-8">
   <title>Card Layout</title>
   <style>
-
     .main-container {      
       background-color: purple;
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+      border-radius: 12px;
+      gap:8px;
+      padding:8px;
     }
   
     .card {
-      width: 33.33%;
+      width: calc(33.33% - 8px); 
       height: 150px;
       border-radius: 8px;
       color: white;
@@ -21,20 +24,10 @@
       justify-content: center;
     }
   
-
-    .card1 { background-color: #e74c3c; }
-    .card2 { background-color: #3498db; }
-    .card3 { background-color: #2ecc71; }
-    .card4 { background-color: #f1c40f; }
-    .card5 { background-color: #9b59b6; }
-    .card6 { background-color: #e67e22; }
-
-
-
     /* Medium screens: 2 cards per row */
     @media (max-width: 768px) {
       .card {
-        width: 50%;
+      width: calc(50% - 8px); 
       }
     }
   
@@ -45,14 +38,24 @@
       }
     }
   
-
+    .card1 { background-color: #e74c3c; }
+    .card2 { background-color: #3498db; }
+    .card3 { background-color: #2ecc71; }
+    .card4 { background-color: #f1c40f; }
+    .card5 { background-color: #9b59b6; }
+    .card6 { background-color: #eed1b8; }
   </style>
   
 </head>
 <body>
 
   <div class="main-container">
-
+    <div class="card card1">Card 1</div>
+    <div class="card card2">Card 2</div>
+    <div class="card card3">Card 3</div>
+    <div class="card card4">Card 4</div>
+    <div class="card card5">Card 5</div>
+    <div class="card card6">Card 6</div>
   </div>
 
 </body>
