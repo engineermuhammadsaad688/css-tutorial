@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Container Layout</title>
+  <style>
+   html,body{
+      height: 100%;
+      width: 100%;
+      background-color: pink;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+   }
+   .container{
+      background-color: green;
+      height: 300px;
+      width: 50%;
+      display: flex;
+      /* padding-top: 15px;
+      padding-left: 15px;
+      padding-right:15px ;
+      padding-bottom: 15px; */
+      padding: 15px;
+      flex-wrap: wrap;
+      gap: 10px; /* ya jitna space chahiye */
+   }
+   .first-component{
+      background-color: red;
+      height: calc(50% - 5px);
+      width: calc(50% - 5px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+      .second-component{
+      background-color: blue;
+      height: calc(50% - 5px);
+      width: calc(50% - 5px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+      .third-component{
+      background-color: purple;
+      height: calc(50% - 5px);
+      width: calc(50% - 5px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+      .forth-component{
+      background-color: maroon;
+      height: calc(50% - 5px);
+      width: calc(50% - 5px);
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+   }
+   .first-component img{
+       height:100% ;
+       width: 100%;
+   }
+      .second-component img{
+       height:100% ;
+       width: 100%;
+       
+   }
+      .third-component img{
+       height:100% ;
+       width: 100%;
+       
+   }
+      .forth-component img{
+       height:100% ;
+       width: 100%;
+       
+   }
+
+   </style>
+</head>
+<body>
+  <div class="container">
+   <div class="first-component" >
+      <img src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80" alt="React logo">
+
+   </div>
+
+    <div class="second-component">
+      <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80" alt="React logo">
+  </div>
+
+    <div class="third-component">
+ <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" alt="React logo">
+  </div>
+
+    <div class="forth-component">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="React logo">
+  </div>
+   </div>
+
+    </body>
+</html>
