@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sidebar Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: pink;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-container {
+      background-color: white;
+      height: 300px;
+      width: 50%;
+      display: flex;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+    .left-component{
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      padding-right:10px; 
+    }
+    .right-component{
+      background-color: orange;
+      width: 30%;
+    }
+    .left-component-first{
+      margin-top: 20px;
+    }
+    .left-component-second{
+      margin-top: 20px;
+    }
+    .left-component-third{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+      
+    }
+    .left-component-third-first{
+            display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .left-component-third-second{
+            display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .right-component img{
+      height: 100%;
+      width: 100%;
+    }
+    .left-component-third-second a {
+  text-decoration: none;       /* underline hata do */
+  color: blue;                /* text ka color */
+  padding: 8px 16px;           /* andar space */
+  border-radius: 5px;          /* corner gol */
+  font-weight: bold;           /* bold text */
+  transition: background-color 0.3s; /* smooth hover effect */
+}
+
+.left-component-third-second a:hover {
+  color: yellow;
+}
+
+  </style>
+
+
+
+</head>
+
+<body>
+  <div class="main-container">
+  <div class="left-component">
+<div class="left-component-first">
+<h1>Long Established</h1>
+</div>
+<div class="left-component-second">
+  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+</div>
+<div class="left-component-third">
+<div class="left-component-third-first">
+  <h3>8 May 2025</h3>
+</div>
+
+<div class="left-component-third-second">
+<a href="#">Read more</a>
+</div>
+</div>
+    </div>
+
+
+
+    <div class="right-component">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="React logo">
+    </div>
+  </div>
+
+</body>
+
+</html>
