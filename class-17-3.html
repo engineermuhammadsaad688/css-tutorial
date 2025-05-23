@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Container Layout</title>
+  <style>
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+      background-color: pink;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .main-container {
+      background-color: white;
+      height: 300px;
+      width: 50%;
+      display: flex;
+      padding: 10px;
+    }
+
+    .left-component {
+      height: 100%;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-right: 10px;
+
+
+
+    }
+
+    .right-component {
+      height: 100%;
+      width: 30%;
+    }
+
+    .left-component-first {
+      margin-top: 30px;
+
+
+    }
+
+    .left-component-second {
+      color: gray;
+    }
+
+    .left-component-third {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+
+    .right-component img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .left-component-third a {
+      text-decoration: none;
+      /* underline hataye */
+      color: blue;
+      /* text ka color */
+      font-weight: bold;
+      /* mota text */
+      /* halki blue background */
+      padding: 8px 12px;
+      /* andar ka space */
+      border-radius: 5px;
+      /* corner gol */
+      transition: background-color 0.3s;
+      /* hover transition */
+    }
+
+    .left-component-third a:hover {
+      /* hover pe dark blue */
+      color: red;
+      /* text ka color white ho jaye hover pe */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="left-component">
+      <div class="left-component-first">
+        <h1> Long Established</h1>
+      </div>
+      <div class="left-component-second">
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout. The point of using Lorem Ipsum is that.....</p>
+      </div>
+      <div class="left-component-third">
+        <h3>May 2025</h3>
+        <a href="#">Read more</a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="right-component">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="React logo">
+    </div>
+  </div>
+
+</body>
+
+</html>
