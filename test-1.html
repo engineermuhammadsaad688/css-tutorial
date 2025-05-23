@@ -6,52 +6,94 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Container Layout</title>
   <style>
-   html,body{
-      width: 100%;
-      height: 100%;
-      background-color: pink;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }
-   .container{
-      background-color: green;
+  body,html{
+    height: 100%;
+    width: 100%;
+    background-color: pink;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .main-container{
+    background-color: white;
     height: 300px;
     width: 50%;
-      
-
-   }
-  .first-component{
-      background-color: red;
-  }
-  .second-component{
-      background-color: blue;
+    display: flex;
+    padding: 10px;
   }
 
-        .third-component{
-      background-color: purple;
-        }
+  .left-component{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+  }
+  .right-component{
+    width: 30%;
+    background-color: darkgreen;
+  }
+  .left-component-first{
+
+    margin-top: 10px;
+
+  }
+  .left-component-second{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  .left-component-third{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+
+  }
+  .right-component img{
+    height: 100%;
+    width: 100%;
+  }
+  .left-component-third a {
+  text-decoration: none;     /* underline hata do */
+  color: blue;               /* text color set karo */
+  font-weight: bold;         /* text bold karo */
+  padding: 5px 10px;         /* andar ka spacing */
+  border-radius: 5px;        /* rounded corner */
+  transition: 0.3s;          /* hover effect smooth banane ke liye */
+}
+
+ .left-component-third a:hover {
+  color: yellow;              /* hover pe text color change */
+}
+
+  
    </style>
 </head>
 <body>
-  <div class="container">
-   <div class="first-component" >
-    first component
-   </div>
-    <div class="second-component">
-    secondcomponent
-    </div>
-    <div class="third-component">
-      thirdcomponent
-      </div>
-     <div class="forth-component">
-      forthcomponent
-     </div>
+<div class="main-container">
+ <div class="left-component">
+  <div class="left-component-first">
+  <h1> Long Established</h1>
+  </div>
+  <div class="left-component-second">
+  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+  </div>
+  <div class="left-component-third">
+  <h3>8 May 2025</h3>
+<a href="#">Read more</a>
+  </div>
 
+ </div>
+ <div class="right-component">
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="React logo">
+ </div>
 
-</div>
+  </div>
+  
 
 
     </body>
