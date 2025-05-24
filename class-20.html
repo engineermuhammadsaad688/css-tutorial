@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Container Layout</title>
+  <style>
+    html,body {
+      background-color: pink;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+
+    .main-container {
+      background-color: red;
+      height: 480px;
+      width: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .top-component {
+      background-color: green;
+      height: 50%;
+      width: 100%;
+
+    }
+
+    .bottom-component {
+      background-color: white;
+      height: 50%;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      box-sizing: border-box;
+    }
+
+    .top-component img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .read-more {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .read-more a {
+      color: darkblue;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .read-more a:hover {
+      color: #ff6600;
+    }
+
+    .bottom-component h1 {
+      color: darkgray;
+    }
+    .bottom-component p {
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="top-component">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="React logo">
+    </div>
+    <div class="bottom-component">
+      <h1>Long Established</h1>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+        at its layout. The point of using Lorem Ipsum is that....</p>
+      <div class="read-more">
+        <h3>11May 2025</h3>
+        <a href="#">Read more</a>
+      </div>
+
+
+
+
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
