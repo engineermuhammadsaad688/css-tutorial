@@ -1,0 +1,192 @@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: pink;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main-container {
+            background-color: white;
+            height: auto;
+            width: 70%;
+        }
+
+        .first-component {
+        }
+
+        .second-component {
+        }
+
+        .third-component {
+            height: 150px;
+            width: 100%;
+            display: flex;
+        }
+
+        .fourth-component {
+            height: 400px;
+            width: 100%;
+            display: flex;
+        }
+
+        .third-component-left {
+            height: 100%;
+            width: 50%;
+        }
+
+        .third-component-right {
+            height: 100%;
+            width: 50%;
+        }
+
+        .fourth-component-left {
+            height: 100%;
+            width: 50%;
+            padding-right: 80px;
+            padding-left: 80px;
+            box-sizing: border-box;
+
+        }
+
+        .fourth-component-right {
+            height: 100%;
+            width: 50%;
+        }
+
+        .third-component-left-first {
+        }
+
+        .third-component-left-second {
+        }
+
+        .third-component-right-first {
+        }
+
+        .third-component-right-second {
+        }
+
+        .third-component-left-first h3 {
+            margin: 0;
+        }
+
+        .third-component-right-first h3 {
+            margin: 0;
+        }
+
+        .fourth-component-left img {
+            height: 100%;
+            width: 100%;
+            border: 1px solid gray;
+            border-radius: 20px;
+        }
+
+        .fourth-component-right-first {
+        }
+
+        .fourth-component-right-third {
+            display: flex;
+            gap: 10px;
+        }
+
+        .fourth-component-right-third-first {
+        }
+
+        .fourth-component-right-third-second {
+        }
+        .fourth-component-right-first h1{
+            margin: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="first-component">
+            <h1>Our mission and vision</h1>
+        </div>
+        <div class="second-component">
+            <p>At Agentic Creed, we are dedicated to transforming businesses with intelligent automation, seamless
+                collaboration, and data-driven decision-making. Our goal is to eliminate inefficiencies, enhance
+                customer engagement, and empower organisations with a fully integrated CRM and business management
+                suite.</p>
+        </div>
+        <div class="third-component">
+            <div class="third-component-left">
+                <div class="third-component-left-first">
+                    <h3>Vision</h3>
+                </div>
+                <div class="third-component-left-second">
+                    <p>To revolutionise business operations with intelligent automation, seamless collaboration, and
+                        data-driven insights. We aim to create a connected, efficient, and growth-driven ecosystem that
+                        enhances customer experiences and optimises workflows.</p>
+                </div>
+            </div>
+            <div class="third-component-right">
+                <div class="third-component-right-first">
+                    <h3>Mission</h3>
+                </div>
+                <div class="third-component-right-second">
+                    <p>Empowering businesses with a scalable, user-friendly, and secure platform that streamlines Sales,
+                        Marketing, ITSM, Customer Support, and more. We prioritise automation, data security, and
+                        innovation to drive long-term success and customer satisfaction.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="fourth-component">
+            <div class="fourth-component-left">
+                <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="React logo">
+            </div>
+
+
+
+
+
+            <div class="fourth-component-right">
+                <div class="fourth-component-right-first">
+                    <h1>What We Offer</h1>
+                </div>
+                <div class=" fourth-component-right-second">
+                    <p>Agentic Creed is a fully integrated business suite, offering a range of tools designed to
+                        optimise different business operations.
+
+                    </p>
+                </div>
+                <div class="fourth-component-right-third">
+                    <div class="fourth-component-right-third-first">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="fourth-component-right-third-second">
+                        CRM & Sales Management
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+</body>
+
+</html>
