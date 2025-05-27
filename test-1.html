@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
-    html,
-    body {
+    html,body {
       height: 100%;
       width: 100%;
       background-color: pink;
@@ -24,37 +23,52 @@
       background-color: white;
       height: 300px;
       width: 50%;
+      padding: 10px;
     }
 
     .first-component {
       height: 20%;
       width: 100%;
       display: flex;
+      border-bottom: 1px solid gray;
 
     }
 
     .second-component {
-      background-color: sienna;
       height: 20%;
       width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      box-sizing: border-box;
+      border-bottom: 1px solid gray;
+
     }
 
     .third-component {
-      background-color: brown;
       height: 20%;
       width: 100%;
+      display: flex;
+      gap: 20px;
+      border-bottom: 1px solid gray;
+
     }
 
     .fourth-component {
-      background-color: darkgoldenrod;
       height: 20%;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: 1px solid gray;
+
     }
 
     .fifth-component {
-      background-color: salmon;
       height: 20%;
       width: 100%;
+      display: flex;
+      justify-content: center;
     }
 
     .first-component-left {
@@ -98,8 +112,71 @@
       padding: 10px;
 
     }
-    .second-component-first{
-      
+
+    .second-component-first {
+      display: flex;
+      border: 1px solid gray;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+
+
+    }
+
+    .second-component-second {
+      display: flex;
+      border: 1px solid gray;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .second-component-third {
+      display: flex;
+      border: 1px solid gray;
+      border-radius: 5px;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .third-component-first {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: gray;
+    }
+
+    .third-component-second {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: gray;
+
+    }
+
+    .fourth-component-first {
+      height: 70%;
+      width: 100%;
+      background-color: red;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid gray;
+      border-radius: 10px;
+
+
+    }
+    .fifth-component-first{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: gray;
     }
   </style>
 </head>
@@ -124,10 +201,6 @@
         </div>
       </div>
     </div>
-
-
-
-
     <div class="second-component">
       <div class="second-component-first">
         Transcription
@@ -142,22 +215,32 @@
 
       </div>
     </div>
-
-
-
-
-
-
-
-
     <div class="third-component">
-      third component
+      <div class="third-component-first">
+        <i class="fas fa-globe icon-label centered-content"></i>
+      </div>
+      <div class="third-component-second">
+        ORIGINAL
+
+      </div>
     </div>
+
     <div class="fourth-component">
-      fourth component
+      <div class="fourth-component-first">
+        GET PRO TRANSCRIPTION
+
+      </div>
     </div>
+
+
+
+
+
+
     <div class="fifth-component">
-      fifth component
+      <div class="fifth-component-first">
+        GET PRO TRANSCRIPTION
+      </div>
     </div>
   </div>
 
