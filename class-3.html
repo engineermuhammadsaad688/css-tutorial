@@ -2,59 +2,94 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Container Layout</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-   html,body{
-    height: 100%;
-    width: 100%;
-    background-color: pink;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   }
-   .main-container{
-    background-color: green;
-    height: 100%;
-    width: 70%;
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: pink;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-   }
-      .first-component {
-        background-color: blueviolet;
-      }
+        .main-container {
+            background-color: green;
+            height: 100%;
+            width: 70%;
 
-    .second-component {
-        background-color: violet;
-    }
-    .third-component {
-    height: 200px;
-    width: 100%;}
+        }
 
-  </style>
+        .first-component {
+            background-color: blueviolet;
+
+        }
+
+        .second-component {
+            background-color: violet;
+        }
+
+        .third-component {
+            background-color: aqua;
+            height: 200px;
+            width: 100%;
+            display: flex;
+        }
+
+        .fourth-component {
+            background-color: red;
+        }
+
+        .third-component-left {
+            background-color: brown;
+            height: 100%;
+            width: 50%;
+        }
+
+        .third-component-right {
+            background-color: steelblue;
+            height: 100%;
+            width: 50%;
+        }
+    </style>
 </head>
-<body>
-<div class="main-container">
-<div class="first-component">
- first component
-</div>
-<div class="second-component">
-second component
-</div>
-<div class="third-component">
-third component
-</div>
-<div class="fourth-component">
 
-</div>
-</div>
+<body>
+    <div class="main-container">
+        <div class="first-component">
+            <h1>Our mission and vision</h1>
+        </div>
+        <div class="second-component">
+            <p>At Agentic Creed, we are dedicated to transforming businesses with intelligent automation, seamless
+                collaboration, and data-driven decision-making. Our goal is to eliminate inefficiencies, enhance
+                customer engagement, and empower organisations with a fully integrated CRM and business management suite.</p>
+        </div>
+        <div class="third-component">
+            <div class="third-component-left">
+                left component
+            </div>
+            <div class="third-component-right">
+                right component
+            </div>
+        </div>
+
+        <div class="fourth-component">
+           <div class="fourth-component-first">
+            left component
+           </div>
+        </div>
+
 
 
 
 
 </body>
+
 </html>
