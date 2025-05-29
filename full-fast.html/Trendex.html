@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Container Layout</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: pink;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .main-container {
+      background-color: gray;
+      height: 600px;
+      width: 80%;
+    }
+    .first-component{
+      height: 100px;
+      width: 100%;
+      background-color: red;
+    }
+    .first-component-first{
+
+      background-color: springgreen;
+      display: flex; /* Flex container */
+      gap: 15px;
+    }
+    .first-component-first-first{
+      background-color: maroon;
+    }
+    .first-component-first-second{
+      background-color: darkblue;
+    }
+     .second-component{
+      height: 100px;
+      width: 100%;
+      background-color: darkkhaki;
+      display: flex;
+     }
+     .third-component{
+      height: 100px;
+      width: 100%;
+      background-color: red;
+      display: flex;
+     }
+  </style>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="first-component">
+           <div class="first-component-first">
+        <div class="first-component-first-first">
+          a
+        </div>
+        <div class="first-component-first-second">
+          b
+        </div>
+    </div>
+
+  </div>
+
+
+    <div class="second-component">
+      <div class="second-component-first">
+      <div class="second-component-first-first">
+    a 
+      </div>
+      <div class="second-component-first-second">
+   b 
+      </div>
+      <div class="second-component-first-third">
+ c 
+      </div>
+      <div class="second-component-first-fourth">
+  e 
+      </div>
+      <div class="second-component-first-fifth">
+  d
+      </div>
+      </div>
+      
+    </div>
+
+
+    <div class="third-component">
+ p 
+    </div>
+  </div>
+
+</body>
+
+</html>
