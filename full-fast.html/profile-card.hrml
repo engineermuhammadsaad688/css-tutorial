@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saad Programmer</title>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .main-container {
+            background-color: gray;
+            height: 100%;
+            width: 70%;
+        }
+
+        .first-component {
+            background-color: purple;
+        }
+
+        .second-component {
+            background-color: darkgray;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            
+        }
+
+        .third-component{
+            height: 100px;
+            width: 100%;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .first-component-first {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .first-component-second {
+            background-color: purple;
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .second-component-first {
+            background-color: darkgray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 1px solid black;
+            row-gap: 3px;
+            width: calc(25% - 8px);
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .second-component-first-first {
+            background-color: pink;
+            padding: 20px;
+            border: 1px solid gray;
+            border-radius: 50%;
+
+        }
+
+        .second-component-first-second {
+        }
+
+        .second-component-first-third {
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="first-component">
+            <div class="first-component-first">
+                <h2>Meet Our Team Membter</h2>
+            </div>
+            <div class="first-component-second">
+                <p>A diverse team of experts united by innovation and customer success. With backgrounds in software</p>
+                <p>development, marketing, sales, and customer support, we deliver exceptional solutions with passion.
+                </p>
+            </div>
+        </div>
+
+        <div class="second-component">
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    a
+                </div>
+                <div class="second-component-first-second">
+                    Saad
+                </div>
+                <div class="second-component-first-third">
+                    programmer
+                </div>
+            </div>
+
+        </div>
+        
+    <div class="third-component">
+    footer
+</div> 
+        
+
+
+</body>
+
+</html>

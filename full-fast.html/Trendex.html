@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Container Layout</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     html,
     body {
@@ -21,34 +22,66 @@
       height: 600px;
       width: 80%;
     }
-    .first-component{
-      height: 100px;
-      width: 100%;
-      background-color: red;
-    }
-    .first-component-first{
 
-      background-color: springgreen;
-      display: flex; /* Flex container */
-      gap: 15px;
-    }
-    .first-component-first-first{
-      background-color: maroon;
-    }
-    .first-component-first-second{
-      background-color: darkblue;
-    }
+    .first-component{
+           height: 100px;
+      width: 100%;
+      background-color: blue;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    } 
      .second-component{
-      height: 100px;
+      height: 400px;
       width: 100%;
       background-color: darkkhaki;
-      display: flex;
      }
      .third-component{
       height: 100px;
       width: 100%;
       background-color: red;
+     }
+     .first-component-first{
+      background-color: brown;
       display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+     }
+     .first-component-second{
+     background-color: #800080;
+     display: flex;
+     gap: 20px;
+     justify-content: center;
+     align-items: center;
+     }
+     .first-component-third{
+      background-color: navy;
+     }
+     .first-component-first-first{
+      background-color: yellowgreen;
+
+     }
+     .first-component-first-second{
+      background-color: peru;
+     }
+     .first-component-second-first{
+      background-color: red;
+     }
+          .first-component-second-second{
+      background-color: green;
+     }
+          .first-component-second-third{
+      background-color: gold;
+     }
+          .first-component-second-fourth{
+      background-color: blue;
+     }
+          .first-component-second-fifth{
+      background-color: orangered;
+     }
+     .first-component-third-first{
+      background-color: #800080;
      }
   </style>
 </head>
@@ -56,43 +89,46 @@
 <body>
   <div class="main-container">
     <div class="first-component">
-           <div class="first-component-first">
-        <div class="first-component-first-first">
-          a
-        </div>
-        <div class="first-component-first-second">
-          b
-        </div>
+      <div class="first-component-first">
+      <div class="first-component-first-first">
+<i class="fas fa-flag"></i>     
+ </div>
+      <div class="first-component-first-second">
+      Tendax
+      </div>
+      </div>
+      <div class="first-component-second">
+       <div class="first-component-second-first">
+        first
+       </div>
+         <div class="first-component-second-second">
+         second
+       </div>
+         <div class="first-component-second-third">
+        third 
+       </div>
+         <div class="first-component-second-fourth">
+         fourth
+       </div>
+         <div class="first-component-second-fifth">
+         fifth
+       </div>
+      </div>
+      <div class="first-component-third">
+      <div class="first-component-third-first">
+     first
+      </div>
+      </div>
     </div>
-
-  </div>
-
 
     <div class="second-component">
-      <div class="second-component-first">
-      <div class="second-component-first-first">
-    a 
-      </div>
-      <div class="second-component-first-second">
-   b 
-      </div>
-      <div class="second-component-first-third">
- c 
-      </div>
-      <div class="second-component-first-fourth">
-  e 
-      </div>
-      <div class="second-component-first-fifth">
-  d
-      </div>
+      second-component
       </div>
       
-    </div>
-
-
     <div class="third-component">
- p 
+    third-component
     </div>
+
   </div>
 
 </body>
