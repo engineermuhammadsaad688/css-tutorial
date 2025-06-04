@@ -1,0 +1,8 @@
+main nay header banain hai
+(1)main teen components the logo or name jo k left most side per hai.
+(2) links jo k header k dirmiyan the.
+(3)Get starded ka link jo k started ka link jo k right most side per hai.
+main nay justify-content:space-between; ka istmal kia hai.jis se components k dirman
+barabar space a jiti ha .
+header ko main nay fixed height di hai components ko height or width nah di. wo
+or width lay lay nin gray

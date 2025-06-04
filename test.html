@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    html,
+    body {
+        background-color: plum;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .main-container {
+        background-color: deeppink;
+        width: 100%;
+    }
+
+    .first-component {
+        height: 100px;
+        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .first-component-first {
+        background-color: blue;
+        display: flex;
+    }
+
+    .first-component-second {
+        background-color: green;
+
+    }
+
+    .first-component-third {}
+
+    .first-component-first-first {
+        background-color: darkgoldenrod;
+
+    }
+
+    .first-component-first-second {
+        background-color: khaki;
+    }
+
+    .first-component-second-first {
+        background-color: red;
+        display: flex;
+        gap: 43px;
+
+    }
+
+    .first-component-second-first a {
+        display: block;
+        padding: 10px 15px;
+        color: white;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .first-component-second-first a:hover {
+        background-color: black;
+        color: yellow;
+    }
+
+    .first-component-second-first-first {
+        background-color: blue;
+    }
+
+    .first-component-second-first-second {
+        background-color: green;
+    }
+
+    .first-component-second-first-third {
+        background-color: maroon;
+    }
+
+    .first-component-second-first-fourth {
+        background-color: brown;
+    }
+
+    .first-component-second-first-fifth {
+        background-color: olive;
+    }
+
+    .first-component-third-first {
+        background-color: green;
+    }
+
+    .first-component-third-second {
+        background-color: blue;
+    }
+
+    .first-component-second-third-first {
+        background-color: orange;
+        display: flex;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 10px;
+        gap: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+    }
+
+    .first-component-second-third-first:hover {
+        background-color: blue;
+        color: white;
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .first-component-second-third-first-first {
+        display: flex;
+
+
+    }
+
+    .second-component {
+        height: 450px;
+        width: 100%;
+        background-color: blue;
+        display: flex;
+
+
+    }
+
+    .second-component-first {
+        height: 500px;
+        width: 33.33%;
+        background-color: yellow;
+    }
+
+
+    .second-component-second {
+        height: 500px;
+        width: 33.33%;
+        background-color: aqua;
+    }
+
+    .second-component-third {
+        height: 500px;
+        width: 33.33%;
+        background-color: blueviolet;
+    }
+
+    .second-component-first-first {
+        background-color: red;
+    }
+
+    .second-component-first-second {
+        background-color: green;
+    }
+
+    .third-component {
+        background-color: blue;
+        display: flex;
+    }
+
+    .third-component-first {
+        height: 100px;
+        width: 33.33%;
+        background-color: red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .third-component-second {
+        height: 100px;
+        width: 33.33%;
+        background-color: orangered;
+    }
+
+    .third-component-third {
+        height: 100px;
+        width: 33.33%;
+        background-color: yellow;
+    }
+
+    .second-component-second-fourth img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .second-component-third-fourth img {
+        height: 400%;
+        width: 300%;
+    }
+
+    .third-component-first-first {
+        background-color: red;
+    }
+
+    .third-component-first-second {
+        background-color: orangered;
+    }
+
+    .third-component-first-third {
+        background-color: blue;
+    }
+
+    .third-component-first-fourth {
+        background-color: olive;
+        
+
+
+
+    }
+</style>
+
+<body>
+    <div class="main-container">
+        <div class="first-component">
+            <div class="first-component-first">
+                <div class="first-component-first-first">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="first-component-first-second">
+                    Tendex
+                </div>
+            </div>
+
+            <div class="first-component-second">
+                <div class="first-component-second-first">
+                    <div class="first-component-second-first-first">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="first-component-second-first-second">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="first-component-second-first-third">
+                        <a href="#">Contact</a>
+                    </div>
+                    <div class="first-component-second-first-fourth">
+                        <a href="#">Services</a>
+                    </div>
+                    <div class="first-component-second-first-fifth">
+                        <a href="#">Blog</a>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="first-component-third">
+                <div class="first-component-second-third-first">
+                    <div class="first-component-second-third-first-first">
+                        Get Started
+                    </div>
+                    <div class="first-component-second-third-first-second">
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="second-component">
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    <h1>ShowCase your</h1>
+                    <h1>strengths</h1>
+                </div>
+                <div class="second-component-first-second">
+                    <p>We combine simplicity and power to help HR<br> teams save time, reduce errors, and focus on<br>
+                        what
+                        matters most —
+                        their people.</p>
+                </div>
+
+            </div>
+            <div class="second-component-second">
+                <div>
+                    ★★★★★ 4.9 (1.8k+ rating)
+                </div>
+                <div>
+                    <p> Setup was fast — no IT help needed. I was<br> running reports within an hour. User-friendly for
+                        <br>admins
+                        and
+                        staff alike. Perfect for small teams.<br> Docs are secure and easy to access.
+                    </p>
+                </div>
+                <div>
+                    Natalle D.
+                </div>
+                <div>
+                    HR Assistant, PixelCrew
+                </div>
+                <div class="second-component-second-fourth">
+                    <img
+                        src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+            </div>
+            <div class="second-component-third">
+                <div class="second-component-third">
+                    <div class="second-component-thrid-first">
+                        <div><i class="fa-solid fa-rocket"></i></div>
+                        <div>
+                            Trendex
+                        </div>
+                    </div>
+                    <div>
+                        <h3>42% rise in sales follow <br>-up win rate</h3>
+                    </div>
+                    <div>
+                        Public does not participate in payment for order<br>
+                        flow as a source of revenue.
+                    </div>
+                    <div class="second-component-third-fourth">
+                        <img
+                            src="https://images.unsplash.com/photo-1423479185712-25d4a4fe1006?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="third-component">
+            <div class="third-component-first">
+                <div class="third-component-first-first">
+                    <i class="fa-solid fa-circle fa-xs"></i>
+                </div>
+                <div class="third-component-first-second">
+                    Million
+                </div>
+                <div class="third-component-first-third">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="third-component-first-fourth">
+                  <br>  Startup ready to connected
+                </div>
+            </div>
+
+            <div class="third-component-second">
+                b
+            </div>
+            <div class="third-component-third">
+                c
+            </div>
+            
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+
