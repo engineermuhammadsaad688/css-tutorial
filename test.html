@@ -163,31 +163,65 @@
         background-color: green;
     }
 
-    .third-component {
-        background-color: blue;
-        display: flex;
+ .third-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    height: 100px;
+    margin-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+  }
+
+  .third-component-first{
+    background-color: white;
+    color: gray;
+    width: 33.33%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 10px;
+  
+  }
+  .third-component-first-first{
+    display: flex;
+    justify-content:space-between;  
+    align-items: center;
+  }
+
+  .third-component-second {
+    background-color: blue;
+    width: 33.33%;
+    height: 100%;
+  }
+
+  .third-component-third {
+    background-color: green;
+    width: 33.33%;
+
+    height: 100%;
+  }
+  .second-component-thrid-first{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     }
 
-    .third-component-first {
-        height: 100px;
-        width: 33.33%;
-        background-color: red;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-    }
-
-    .third-component-second {
-        height: 100px;
-        width: 33.33%;
+    .third-component-first-second {
         background-color: orangered;
     }
 
-    .third-component-third {
-        height: 100px;
-        width: 33.33%;
-        background-color: yellow;
+    .third-component-first-third {
+        background-color: blue;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 50%;
+    color: white;
     }
 
     .second-component-second-fourth img {
@@ -200,25 +234,14 @@
         width: 300%;
     }
 
-    .third-component-first-first {
-        background-color: red;
-    }
 
-    .third-component-first-second {
-        background-color: orangered;
-    }
 
-    .third-component-first-third {
-        background-color: blue;
-    }
 
-    .third-component-first-fourth {
-        background-color: olive;
         
 
 
 
-    }
+    
 </style>
 
 <body>
@@ -361,7 +384,7 @@
                     <i class="fa-solid fa-user"></i>
                 </div>
                 <div class="third-component-first-fourth">
-                  <br>  Startup ready to connected
+                   Startup ready to connected
                 </div>
             </div>
 
