@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Layout with Sidebar and Cards</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            padding: auto;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        .main-container {
+            height: 100%;
+            width: 100%;
+            background-color: blue;
+
+        }
+
+        .first-component {
+            height: 100px;
+            background-color: #2c3e50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-bottom: 2px solid red;
+        }
+
+        .first-component-first {
+            color: white;
+        }
+
+        .first-component-second {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .first-component-first .acme {
+            color: red;
+
+        }
+
+        .first-component-second-first {
+            color: red;
+        }
+
+        .first-component-second-second {
+            color: white;
+        }
+
+        .first-component-second-third {
+            color: white;
+        }
+
+        .first-component-second {
+            font-weight: bold;
+        }
+
+
+
+        .second-component {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+                        background-color: #2c3e50;
+            color: white;
+        }
+
+        .second-component-first {}
+
+        .second-component-second {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .second-component-second-first {
+            color: white;
+        }
+
+        .second-component-second-second {}
+
+
+
+        .subscribe-input {
+            padding: 10px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .subscribe-button {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .subscribe-button:hover {
+            background-color: darkred;
+        }
+
+
+        .fourth-component {
+            height: 100px;
+            width: 100%;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                        color: white;
+
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover par underline effect with 5px gap */
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            /* 5px gap niche */
+            width: 0%;
+            height: 2px;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: red;
+        }
+
+        .third-component {
+            background-color: white;
+            display: flex;
+            padding-left: 50px;
+            padding-right: 50px;
+            gap: 30px;
+            padding-top: 20px;
+        }
+
+        .third-component-left {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 20px;
+
+        }
+
+        .third-component-right {
+            width: 30%;
+            height: 200px;
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+
+        }
+
+        .third-component-left-first {}
+
+        .third-component-left-second {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        .third-component-right-first {}
+
+        .third-component-right-second {}
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="first-component">
+            <div class="first-component-first">
+                <h1><span class="acme">Acme</span> Web Design</h1>
+            </div>
+            <div class="first-component-second">
+                <div class="first-component-second-first">
+                    <a href="./acme-home.html" class="nav-link">Home</a>
+                </div>
+                <div class="first-component-second-second">
+                    <a href="#" class="nav-link">About</a>
+                </div>
+                <div class="first-component-second-third">
+                    <a href="/acme-services.html" class="nav-link">Services</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="second-component">
+            <div class="second-component-first">
+                <h1>Subscribe To Our Newsletter</h1>
+            </div>
+            <div class="second-component-second">
+                <input type="email" class="subscribe-input" placeholder="Enter Email...">
+                <button class="subscribe-button">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="third-component">
+            <div class="third-component-left">
+                <div class="third-component-left-first">
+                    <h1> About Us</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales, est vitae lobortis
+                        auctor,
+                        augue diam maximus felis, eu porttitor eros ipsum at erat. Pellentesque placerat quam et turpis
+                        rutrum, sit amet sagittis erat dictum. Nam ultricies egestas massa, et blandit tellus pharetra
+                        nec.
+                        Vivamus varius lobortis lorem, et tincidunt ipsum euismod non. Quisque placerat, sem eu finibus
+                        eleifend, velit massa volutpat ante, ut rhoncus eros nunc non sapien. Fusce vel consequat odio.
+                        Aenean sollicitudin eleifend ultricies. Suspendisse ac dolor et urna eleifend hendrerit ut in
+                        purus.
+                    </p>
+                </div>
+                <div class="third-component-left-second">
+                    <p>Duis porta malesuada urna id euismod. Pellentesque efficitur nisl ut turpis malesuada, ut
+                        consectetur nunc interdum. Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Vestibulum eget fermentum ipsum, vitae egestas ligula. Pellentesque
+                        vehicula purus a lacus tempor, ac tristique mauris commodo. Nulla ac pellentesque diam, a
+                        vestibulum libero. Duis id mi mattis, blandit velit eu, sollicitudin risus. Maecenas vulputate
+                        porttitor lacus, eu dignissim est iaculis id. Etiam hendrerit imperdiet finibus. Curabitur
+                        lobortis sem a purus euismod dapibus. Nunc at elit pharetra, viverra mi id, lacinia ante.
+                        Vivamus egestas risus vel ornare gravida. Aenean vitae urna non est ultricies gravida id semper
+                        massa. Fusce vel felis luctus, pellentesque nisi in, aliquam enim. Aliquam finibus congue est,
+                        quis venenatis augue sagittis id.</p>
+                </div>
+            </div>
+            <div class="third-component-right">
+                <div class="third-component-right-first">
+                    <h1>What We Do
+                    </h1>
+                </div>
+                <div class="third-component-right-second">
+                    <p>Duis porta malesuada urna id euismod. Pellentesque efficitur nisl ut turpis malesuada, ut
+                        consectetur nunc interdum. Cum sociis natoque penatibus et magnis</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="fourth-component">
+            Acme Web Design, Copyright © 2017
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

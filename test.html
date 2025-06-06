@@ -2,354 +2,151 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flexbox Navbar</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flexbox Navbar</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-    html,
-    body {
-        background-color: plum;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+  html,
+  body {
+    height: 100%;
+    background-color: plum;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
-    .main-container {
-        background-color: deeppink;
-        width: 100%;
-        padding: 15px;
-        box-sizing: border-box;
-    }
-
-    .first-component {
-        height: 100px;
-        background-color: maroon;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .first-component-first {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .first-component-second {
-        display: flex;
-        gap: 30px;
-
-    }
-
-    .first-component-third {
-        background-color: purple;
-        display: flex;
-        gap: 10px;
-        padding: 10px;
-        border-radius: 5px;
-
-    }
-
-    /* .first-component-first-first {
-
-    } */
-
-    /* .first-component-first-second {
-
-    } */
-
-    /* .first-component-second-first {
-
-    } */
-
-    /* .first-component-second-second {
-    } */
-
-    /* .first-component-second-third {
-    } */
-
-    /* .first-component-second-fourth {
-    } */
-
-    /* .first-component-second-fifth {
-    } */
-
-    .first-component-second a {
-        text-decoration: none;
-        color: gray;
-        padding: 5px 10px;
-        border-radius: 5px;
-        transition: 0.3s;
-        display: inline-block;
-    }
-
-    /* Hover effect */
-    .first-component-second a:hover {
-        background-color: darkgray;
-        color: black;
-        cursor: pointer;
-    }
-
-    .first-component-third-first {}
-
-    .first-component-third-second {}
-
-    .first-component-third:hover {
-        background-color: white;
-        /* halka dark purple */
-        cursor: pointer;
-        transform: scale(1.05);
-        /* thoda zoom effect */
-    }
-
-    .second-component {
-        height: 450px;
-        width: 100%;
-        background-color: brown;
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-
-    }
-
-    .second-component-first {
-        height: 100%;
-        width: 33.33%;
-        background-color: darkblue;
-    }
-
-    .second-component-second {
-        height: 100%;
-        width: 33.33%;
-        background-color: darkgreen;
-    }
-
-    .second-component-third {
-        height: 100%;
-        width: 33.33%;
-        background-color:green;
-    }
-    .second-component-first-first{
-        background-color: blueviolet;
-    }
-    .second-component-first-second{
-        background-color: yellow;
-    }
-    .second-component-second-first{
-        background-color: springgreen;
-    }
-    .second-component-second-second{
-        background-color: red;
-    }
-    .second-component-second-third{
-        background-color: deeppink;
-    }
-    .second-component-second-fourth{
-        background-color: blue;
-
-    }
-    .second-component-second-fourth img{
-        height: 280px;
-        width: 100%;
-        border: 1px solid gray;
-        border-radius: 20px;
-    }
-    .second-component-third-first{
-        display: flex;
-        gap: 10px;
-    }
-    .second-component-third-fourth img{
-        height: 280px;
-        width: 100%;
-        border: 1px solid gray;
-        border-radius: 20px;
-    }
-  .third-component {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 50px;
+  .main-container {
+    background-color: pink;
     height: 100px;
-    margin-top: 30px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
+    width: 100%;
   }
 
-  .third-component-first{
-    background-color: white;
-    color: gray;
-    width: 33.33%;
+  .first-component {
     height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
+    background-color: red;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    border-radius: 10px;
-  
-  }
-  .third-component-first-first{
-    display: flex;
-    justify-content:space-between;  
     align-items: center;
+
   }
 
-  .third-component-second {
+  .first-component-first {
     background-color: blue;
-    width: 33.33%;
-    height: 100%;
-  }
-
-  .third-component-third {
-    background-color: green;
-    width: 33.33%;
-
-    height: 100%;
-  }
-  .second-component-thrid-first{
     display: flex;
-    align-items: center;
-    gap: 10px;
-
-  }
-  .third-component-first-third{
-    padding: 10px;
-    background-color: grey;
-    border-radius: 50%;
-    color: white;
   }
 
+  .first-component-second {
+    background-color: green;
+  }
+
+  .first-component-third {
+    background-color: orange;
+  }
+
+  .first-component-first-first {
+    background-color: darkgoldenrod;
+  }
+
+  .first-component-first-second {
+    background-color: khaki;
+  }
+  .first-component-second-first{
+    background-color: red;
+    display: flex;
+    gap: 43px;
+  }
+  .first-component-second-first-first{
+    background-color: blue;
+  }
+  .first-component-second-first-second{
+    background-color: green;
+  }
+  .first-component-second-first-third{
+    background-color: maroon;
+  }
+  .first-component-second-first-fourth{
+    background-color: brown;
+  }
+  .first-component-second-first-fifth{
+    background-color: olive;
+  }
+    .first-component-second-first a {
+      display: block;
+      padding: 10px 15px;
+      color: white;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .first-component-second-first a:hover {
+      background-color: black;
+      color: yellow;
+    }
+  .first-component-second-third-first{
+    background-color: green;
+    display: flex;
+  }
+  .first-component-second-third-first-second{
+    background-color: blue;
+  }
 </style>
 
 <body>
-    <div class="main-container">
-        <div class="first-component">
-            <div class="first-component-first">
-                <div class="first-component-first-first">
-                    <i class="fa-solid fa-rocket"></i>
-                </div>
-                <div class="first-component-first-second">
-                    Tendex
-                </div>
-            </div>
-            <div class="first-component-second">
-                <div><a href="#" class="first-component-second-first">Home</a></div>
-                <div><a href="#" class="first-component-second-second">About</a></div>
-                <div><a href="#" class="first-component-second-third">Contact</a></div>
-                <div><a href="#" class="first-component-second-fourth">Services</a></div>
-                <div><a href="#" class="first-component-second-fifth">Blog</a></div>
-            </div>
 
-            <div class="first-component-third">
-                <div class="first-component-third-first">
-                    Get Started
-                </div>
-                <div class="first-component-third-second">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-            </div>
+  <div class="main-container">
+    <div class="first-component">
+      <div class="first-component-first">
+        <div class="first-component-first-first">
+          <i class="fa-solid fa-rocket"></i>
         </div>
-        <div class="second-component">
-            <div class="second-component-first">
-                <div class="second-component-first-first">
-                    <h1>ShowCase your <br>strengths</h1>
-                </div>
-                <div class="second-component-first-second">
-                   <p>We combine simplicity and power <br> to help HR
-                    <br>
-                       teams save time, reduce errors,<br> and focus on<br> 
-                        what matters most — their people</p>
-                </div>
-            </div>
-            <div class="second-component-second">
-                <div class="second-component-second-first">
-              <p>★★★★★ 4.9 (1.8k+ rating)</p>
-                </div>
-                <div class="second-component-second-second">
-               <p>Setup was fast — no IT help <br> needed.</p>
-                </div>
-                <div class="second-component-second-third">
-               <p>Natalle D.<br>HR Assistant, PixelCrew</p>
-
-                </div>
-                <div class="second-component-second-fourth">
-                  <img src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-
-                </div>
-            </div>
-
-
-
-
-
-
-
-            <div class="second-component-third">
-                <div class="second-component-third-first">
-                    <div class="second-component-third-first-first">
-                  <i class="fa-solid fa-rocket"></i>
-                    </div>
-                    <div class="second-component-third-first-second">
-                    Trendex
-                    </div>
-                </div>
-                <div class="second-component-third-second ">
-                    <h4>42% rise in sales follow<br>-up win rate</h4>
-
-                </div>
-                <div class="second-component-third-third">
-                <p>Public does not participate in<br> payment for order<br>flow as a source of revenue.</p>
-                </div>
-                <div class="second-component-third-fourth">
-                 <img src=" https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg" alt="Programming Image" />
-
-                </div>
-            </div>
+        <div class="first-component-first-second">
+          Tendex
         </div>
-    <div class="third-component">
-      <div class="third-component-first">
-        <div class="third-component-first-first">
-          <div><i class="fa-solid fa-circle fa-xs"></i>
-          </div>
-          <div> Millions</div>
-          <div class="third-component-first-first-icon">
-            <i class="fa-solid fa-user"></i>
-          </div>
-        </div>
-        <div>Startup ready to connected</div>
       </div>
-      <div class="third-component-first">
-        <div class="third-component-first-first">
-          <div><i class="fa-solid fa-circle fa-xs"></i>
-          </div>
-          <div> Millions</div>
-          <div class="third-component-first-first-icon"><i class="fa-solid fa-user"></i>
-          </div>
+      <div class="first-component-second">
+        <div class="first-component-second-first">
+        <div class="first-component-second-first-first">
+          <a href="#">Home</a>
         </div>
-        <div>Startup ready to connected</div>
+        <div class="first-component-second-first-second">
+         <a href="#">About</a>
+        </div>
+        <div class="first-component-second-first-third">
+        <a href="#">Contact</a>
+        </div>
+        <div class="first-component-second-first-fourth">
+         <a href="#">Services</a>
+        </div>
+        <div class="first-component-second-first-fifth">
+         <a href="#">Blog</a>
+        </div>
+
+        </div>
       </div>
-      <div class="third-component-first">
-        <div class="third-component-first-first">
-          <div ><i class="fa-solid fa-circle fa-xs"></i>
-          </div>
-          <div> Millions</div>
-          <div class="third-component-first-third"><i class="fa-solid fa-user"></i>
-          </div>
+
+
+
+
+
+
+      <div class="first-component-third">
+        <div class="first-component-second-third-first">
+        <div class="first-component-second-third-first-first">
+        Get Started
         </div>
-        <div>Startup ready to connected</div>
+        <div class="first-component-second-third-first-second">
+         <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        </div>
       </div>
 
     </div>
-        </div>
-    </div>
-
+  </div>
 
 
 </body>
