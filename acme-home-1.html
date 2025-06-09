@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Layout with Sidebar and Cards</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            padding: auto;
+            background-color: plum;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        .main-container {
+            width: 100%;
+            background-color: blue;
+
+        }
+
+        .first-component {
+            height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .first-component-first {
+            color: deeppink;
+        }
+
+        .first-component-first .acme {
+            color: blue;
+
+        }
+
+        .first-component-second {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .first-component-second-first {
+            color: white;
+        }
+
+        .first-component-second-second {
+            color: white;
+
+        }
+
+        .first-component-second-third {
+            color: white;
+        }
+
+        .first-component-second {
+            font-weight: bold;
+        }
+
+        .second-component {
+            background-image: url('https://media.istockphoto.com/id/2152993621/photo/close-up-image-of-a-woman-typing-on-keyboard-working-on-her-laptop-computer-at-a-table-indoors.jpg?s=1024x1024&w=is&k=20&c=TROTscQ181yz_8NXBsldtLrLkT4_gTsif3xJlM9ufHo=');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+        }
+
+        .second-component-first {}
+
+        .second-component-second {}
+
+        .third-component {
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .third-component-first {
+            background-color: blue;
+        }
+
+        .third-component-second {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .third-component-second-first {}
+
+        .third-component-second-second {}
+
+        .subscribe-input {
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 0;
+            /* Square corners */
+            outline: none;
+            font-size: 16px;
+        }
+
+        .subscribe-button {
+            padding: 10px 20px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 0;
+            /* Square corners */
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .subscribe-button:hover {
+            background-color: darkblue;
+        }
+
+        .fourth-component {
+            background-color: red;
+        }
+
+        .fourth-component-first {
+            background-color: blue;
+        }
+
+        .fourth-component-first-first {
+            background-color: aqua;
+        }
+
+        .fourth-component-first-second {
+            background-color: blueviolet;
+        }
+
+        .fourth-component-first-third {
+            background-color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="first-component">
+            <div class="first-component-first">
+                <h1><span class="acme">Acme</span> Web Design</h1>
+            </div>
+            <div class="first-component-second">
+                <div class="first-component-second-first">
+                    Home
+                </div>
+                <div class="first-component-second-second">
+                    About
+                </div>
+                <div class="first-component-second-third">
+                    Services
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="second-component">
+            <div class="second-component-first">
+                <h1>Affordable Professional Websites</h1>
+            </div>
+            <div class="second-component-second">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
+                    at, vulputate id lorem. Nulla facilisi.</p>
+            </div>
+        </div>
+        <div class="third-component">
+            <div class="third-component-first">
+                <h1>Subscribe To Our Newsletter</h1>
+            </div>
+            <div class="third-component-second">
+                <input type="email" class="subscribe-input" placeholder="Enter Email...">
+                <button class="subscribe-button">Subscribe</button>
+            </div>
+        </div>
+        <div class="fourth-component">
+            <div class="fourth-component-first">
+                <div class="fourth-component-first-first">
+                    <img src="./images/html.PNG" alt="React logo">
+                </div>
+                <div class="fourth-component-first-second">
+                    HTML5 Markup
+                </div>
+                <div class="fourth-component-first-third">
+                    <span>Lorem ipsum dolor sit amet, consectetur</span>
+                    <span> adipiscing elit. Vivamus mi augue,</span>
+                    <span>viverra sit
+                        amet ultricies</span>
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>
