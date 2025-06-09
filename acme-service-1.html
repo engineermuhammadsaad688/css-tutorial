@@ -33,14 +33,52 @@
             padding-left: 50px;
             padding-right: 50px;
         }
-        .first-component-first{
-        color: deeppink;
+
+        .first-component-first {
+            color: deeppink;
         }
 
         .first-component-first .acme {
             color: blue;
 
         }
+
+        .first-component-second {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .first-component-second-first {
+            color: white;
+        }
+
+        .first-component-second-second {
+            color: white;
+
+        }
+
+        .first-component-second-third {
+            color: white;
+        }
+
+        .first-component-second {
+            font-weight: bold;
+        }
+
+        .second-component {
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+        }
+
+        .second-component-first {}
+
+        .second-component-second {}
     </style>
 </head>
 
@@ -51,7 +89,16 @@
                 <h1><span class="acme">Acme</span> Web Design</h1>
             </div>
             <div class="first-component-second">
-                fdasgjkflflj
+                <div class="first-component-second-first">
+                    Home
+                </div>
+                <div class="first-component-second-second">
+                    About
+                </div>
+                <div class="first-component-second-third">
+                    Services
+                </div>
+
             </div>
 
         </div>
