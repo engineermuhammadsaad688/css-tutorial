@@ -32,6 +32,7 @@
             align-items: center;
             padding-left: 50px;
             padding-right: 50px;
+            border-bottom: 2px solid red;
         }
 
         .first-component-first {
@@ -58,7 +59,7 @@
 
         }
 
-        .first-component-second-third {
+        .first-component-second-second {
             color: white;
         }
 
@@ -99,26 +100,7 @@
             color: red;
         }
 
-
-
         .second-component {
-            background-image: url('https://media.istockphoto.com/id/2152993621/photo/close-up-image-of-a-woman-typing-on-keyboard-working-on-her-laptop-computer-at-a-table-indoors.jpg?s=1024x1024&w=is&k=20&c=TROTscQ181yz_8NXBsldtLrLkT4_gTsif3xJlM9ufHo=');
-            background-size: cover;
-            background-position: center;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-
-        }
-
-        .second-component-first {}
-
-        .second-component-second {}
-
-        .third-component {
             background-color: #2c3e50;
             color: white;
             display: flex;
@@ -128,18 +110,18 @@
             padding-right: 50px;
         }
 
-        .third-component-first {}
+        .second-component-first {}
 
-        .third-component-second {
+        .second-component-second {
             display: flex;
             gap: 10px;
             justify-content: center;
             align-items: center;
         }
 
-        .third-component-second-first {}
+        .second-component-second-first {}
 
-        .third-component-second-second {}
+        .second-component-second-second {}
 
         .subscribe-input {
             padding: 10px;
@@ -166,52 +148,8 @@
             background-color: darkblue;
         }
 
+
         .fourth-component {
-            background-color: white;
-            display: flex;
-            padding-left: 50px;
-            padding-right: 50px;
-            gap: 10px;
-
-        }
-
-        .fourth-component-first {
-            width: 33.33%;
-            background-color: white;
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
-
-        .fourth-component-second {
-            width: 33.33%;
-        }
-
-        .fourth-component-third {
-            width: 33.33%;
-        }
-
-        .fourth-component-first-first {}
-
-        .fourth-component-first-second {}
-
-        .fourth-component-first-third {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            gap: 10px;
-
-        }
-
-        .fourth-component-first-first img {
-            width: 70px;
-            height: 100px;
-
-            
-        }
-                .fifth-component {
             height: 100px;
             width: 100%;
             background-color: red;
@@ -221,6 +159,50 @@
 
 
         }
+   .third-component {
+            background-color: white;
+            display: flex;
+            padding-left: 50px;
+            padding-right: 50px;
+            gap: 30px;
+            padding-top: 20px;
+        }
+
+        .third-component-left {
+            background-color: red;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding: 20px;
+
+        }
+
+        .third-component-right {
+            width: 30%;
+            height: 200px;
+            background-color: gold;
+            color: white;
+            padding: 20px;
+
+        }
+
+        .third-component-left-first {}
+
+        .third-component-left-second {
+            background-color: green;
+            color: white;
+            padding: 20px;
+        }
+
+        .third-component-right-first {
+            background-color: rebeccapurple;
+        }
+
+        .third-component-right-second {
+            background-color: darkcyan;
+        }
+
     </style>
 
 </head>
@@ -232,7 +214,7 @@
                 <h1><span class="acme">Acme</span> Web Design</h1>
             </div>
             <div class="first-component-second">
-                <a href="#" class="nav-link">Home</a>
+                <a href="home" class="nav-link">Home</a>
                 <a href="about" class="nav-link">About</a>
                 <a href="services" class="nav-link">Services</a>
             </div>
@@ -241,83 +223,66 @@
 
         <div class="second-component">
             <div class="second-component-first">
-                <h1>Affordable Professional Websites</h1>
-            </div>
-            <div class="second-component-second">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet ultricies
-                    at, vulputate id lorem. Nulla facilisi.</p>
-            </div>
-        </div>
-        <div class="third-component">
-            <div class="third-component-first">
                 <h1>Subscribe To Our Newsletter</h1>
             </div>
-            <div class="third-component-second">
+            <div class="second-component-second">
                 <input type="email" class="subscribe-input" placeholder="Enter Email...">
                 <button class="subscribe-button">Subscribe</button>
             </div>
         </div>
-        <div class="fourth-component">
-            <div class="fourth-component-first">
-                <div class="fourth-component-first-first">
-                    <img src="./images/html.PNG" alt="React logo">
-                </div>
-                <div class="fourth-component-first-second">
-                    HTML5 Markup
-                </div>
-                <div class="fourth-component-first-third">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Vivamus mi augue,
-                    viverra sit
-                    amet ultricies
 
+        <div class="third-component">
+            <div class="third-component-left">
+                <div class="third-component-left-first">
+                    <h1> About Us</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales, est vitae lobortis
+                        auctor,
+                        augue diam maximus felis, eu porttitor eros ipsum at erat. Pellentesque placerat quam et turpis
+                        rutrum, sit amet sagittis erat dictum. Nam ultricies egestas massa, et blandit tellus pharetra
+                        nec.
+                        Vivamus varius lobortis lorem, et tincidunt ipsum euismod non. Quisque placerat, sem eu finibus
+                        eleifend, velit massa volutpat ante, ut rhoncus eros nunc non sapien. Fusce vel consequat odio.
+                        Aenean sollicitudin eleifend ultricies. Suspendisse ac dolor et urna eleifend hendrerit ut in
+                        purus.
                     </p>
+                </div>
+                <div class="third-component-left-second">
+                    <p>Duis porta malesuada urna id euismod. Pellentesque efficitur nisl ut turpis malesuada, ut
+                        consectetur nunc interdum. Cum sociis natoque penatibus et magnis dis parturient montes,
+                        nascetur ridiculus mus. Vestibulum eget fermentum ipsum, vitae egestas ligula. Pellentesque
+                        vehicula purus a lacus tempor, ac tristique mauris commodo. Nulla ac pellentesque diam, a
+                        vestibulum libero. Duis id mi mattis, blandit velit eu, sollicitudin risus. Maecenas vulputate
+                        porttitor lacus, eu dignissim est iaculis id. Etiam hendrerit imperdiet finibus. Curabitur
+                        lobortis sem a purus euismod dapibus. Nunc at elit pharetra, viverra mi id, lacinia ante.
+                        Vivamus egestas risus vel ornare gravida. Aenean vitae urna non est ultricies gravida id semper
+                        massa. Fusce vel felis luctus, pellentesque nisi in, aliquam enim. Aliquam finibus congue est,
+                        quis venenatis augue sagittis id.</p>
                 </div>
             </div>
-
-            <div class="fourth-component-first">
-                <div class="fourth-component-first-first">
-                    <img src="./images/css.PNG" alt="React logo">
+            <div class="third-component-right">
+                <div class="third-component-right-first">
+                    <h1>What We Do
+                    </h1>
                 </div>
-                <div class="fourth-component-first-second">
-                    HTML5 Markup
-                </div>
-                <div class="fourth-component-first-third">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Vivamus mi augue,
-                    viverra sit
-                    amet ultricies
-
-                    </p>
-                </div>
-            </div>
-            <div class="fourth-component-first">
-                <div class="fourth-component-first-first">
-                    <img src="./images/graphic.PNG" alt="React logo">
-                </div>
-                <div class="fourth-component-first-second">
-                    HTML5 Markup
-                </div>
-                <div class="fourth-component-first-third">
-                    Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Vivamus mi augue,
-                    viverra sit
-                    amet ultricies
-
-                    </p>
+                <div class="third-component-right-second">
+                    <p>Duis porta malesuada urna id euismod. Pellentesque efficitur nisl ut turpis malesuada, ut
+                        consectetur nunc interdum. Cum sociis natoque penatibus et magnis</p>
                 </div>
             </div>
         </div>
-                <div class="fifth-component">
+
+
+
+
+
+
+
+
+
+
+        <div class="fourth-component">
             Acme Web Design, Copyright © 2017
         </div>
-
-
-
-
-
-
-
     </div>
 </body>
 
