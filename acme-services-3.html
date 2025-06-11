@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Web Design | Professional Website Services</title>
+    <style>
+        html,
+        body {
+            width: 100%;
+            margin: auto;
+            padding: auto;
+            font-family: Arial, Helvetica, sans-serif;
+
+
+        }
+
+        .main-container {
+            width: 100%;
+            background-color: blue;
+
+        }
+
+        .first-component {
+            height: 100px;
+            background-color: #2c3e50;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-bottom: 2px solid red;
+        }
+
+        .first-component-first {
+            color: white;
+        }
+
+        .first-component-second {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .first-component-first .acme {
+            color: red;
+
+        }
+
+        .first-component-second-first {
+            color: red;
+        }
+
+        .first-component-second-second {
+            color: white;
+        }
+
+        .first-component-second-third {
+            color: white;
+        }
+
+        .first-component-second {
+            font-weight: bold;
+        }
+
+
+
+        .second-component {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .second-component-first {}
+
+        .second-component-second {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .second-component-second-first {
+            color: white;
+        }
+
+        .second-component-second-second {}
+
+
+
+        .subscribe-input {
+            padding: 10px;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .subscribe-button {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .subscribe-button:hover {
+            background-color: darkred;
+        }
+
+
+        .fourth-component {
+            height: 100px;
+            width: 100%;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            position: relative;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover par underline effect with 5px gap */
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            /* 5px gap niche */
+            width: 0%;
+            height: 2px;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .nav-link:hover {
+            color: red;
+        }
+
+        .third-component {
+            background-color: white;
+            display: flex;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            gap: 15px;
+
+        }
+
+        .third-component-left {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .third-component-right {
+            width: 30%;
+            background-color: #2c3e50;
+            padding: 10px;
+            color: white;
+            height: 420px;
+        }
+
+        .third-component-left-first {
+            width: 100%;
+            background-color: darkgray;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+
+
+        }
+
+        .third-component-left-second {
+            width: 100%;
+            background-color: darkgray;
+            display: flex;
+            flex-direction: column;
+            padding: 5px;
+
+        }
+
+        .third-component-left-third {
+            width: 100%;
+            background-color: darkgray;
+            padding: 5px;
+
+
+        }
+
+        /* Input and Textarea Common Styles */
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px 15px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+            outline: none;
+            box-sizing: border-box;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* Hover and Focus Styles */
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: red;
+            background-color: #fff;
+        }
+
+        /* Textarea Specific */
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Form Buttons Container */
+        .form-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        /* Button Styles */
+        .form-buttons button {
+            padding: 12px 25px;
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover Effect on Buttons */
+        .form-buttons button:hover {
+            background-color: darkred;
+        }
+
+        .third-component-left-first-heading h2 {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="first-component">
+            <div class="first-component-first">
+                <h1><span class="acme">Acme</span> Web Design</h1>
+            </div>
+            <div class="first-component-second">
+                <div class="first-component-second-first">
+                    <a href="./acme-home.html" class="nav-link">Home</a>
+                </div>
+                <div class="first-component-second-second">
+                    <a href="./acme-about.html" class="nav-link">About</a>
+                </div>
+                <div class="first-component-second-third">
+                    <a href="./acme-services.html" class="nav-link">Services</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="second-component">
+            <div class="second-component-first">
+                <h1>Subscribe To Our Newsletter</h1>
+            </div>
+            <div class="second-component-second">
+                <input type="email" class="subscribe-input" placeholder="Enter Email...">
+                <button class="subscribe-button">Subscribe</button>
+            </div>
+        </div>
+
+        <div class="third-component">
+            <div class="third-component-left">
+                <div class="third-component-left-first-heading">
+                    <h2>Services</h2>
+                </div>
+                <div class="third-component-left-first">
+                    <div>
+                        <h2> Website Design</h2>
+                    </div>
+                    <div>
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                            ultrices
+                            at, vulputate id lorem. Nulla facilisi.</p>
+                    </div>
+                    <div>
+                        <p> Pricing: $1,000 – $3,000 </p>
+                    </div>
+
+
+                </div>
+                <div class="third-component-left-second">
+                    <div>Website Maintenance</div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                            ultrices
+                            at, vulputate id lorem. Nulla facilisi.</p>
+                    </div>
+                    <div>
+                        <p> Pricing: $250 per month</p>
+                    </div>
+                </div>
+                <div class="third-component-left-third">
+                    <div>Website Hosting
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi augue, viverra sit amet
+                            ultrices
+                            at, vulputate id lorem. Nulla facilisi.</p>
+                    </div>
+                    <div>
+                        <p> Pricing: $250 per month</p>
+                    </div>
+                </div>
+            </div>
+            <div class="third-component-right">
+                <div>
+                    <h2>Get a quote</h2>
+                </div>
+                <form class="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" rows="5" placeholder="Type your message..."></textarea>
+
+                    <div class="form-buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="fourth-component">
+        Acme Web Design, Copyright © 2017
+    </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

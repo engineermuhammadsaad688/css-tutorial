@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acme Web Design | Professional Website Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: pink;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            background-color: red;
+        }
+
+        .first-component {
+            height: 100px;
+            background-color: blue;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+
+        }
+
+        .first-component-left {
+            display: flex;
+            gap: 30px;
+        }
+
+        .first-component-right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .first-component-left-first {}
+
+        .first-component-left-second {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .first-component-left-second-first {}
+
+        .first-component-left-second-second {}
+
+        .first-component-left-second-third {}
+
+        .first-component-right-first {}
+
+        .first-component-right-second {}
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 8px 15px;
+            border-radius: 25px;
+            width: 250px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+
+
+        }
+
+
+        .search-box i {
+            color: grey;
+            font-size: 14px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            margin-left: 10px;
+            font-size: 14px;
+            width: 100%;
+            background-color: transparent;
+
+        }
+
+        .red-dot {
+            width: 6px;
+            height: 6px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 18px;
+            top: 10px;
+        }
+
+        .profile-container {
+            position: relative;
+            width: 40px;
+            height: 40px;
+        }
+
+        .profile-image {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            display: block;
+        }
+
+        .status-dot {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 8px;
+            height: 8px;
+            background-color: green;
+            color: white;
+            font-size: 12px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white;
+        }
+
+        .second-component {
+            background-color: rebeccapurple;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+
+
+        }
+
+        .second-component-first {
+            height: 400px;
+            width: 30%;
+            background-color: yellowgreen;
+
+        }
+
+        .second-component-second {
+            height: 400px;
+            width: 40%;
+            background-color: peru;
+        }
+
+        .second-component-third {
+            height: 400px;
+            width: 30%;
+            background-color: deeppink;
+        }
+
+        .second-component-first-first {
+            background-color: aqua;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .second-component-first-second {
+            background-color: forestgreen;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+
+
+        }
+
+        .second-component-first-third {
+            background-color: teal;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .second-component-first-fourth {
+            background-color: orangered;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .second-component-first-fifth {
+            background-color: brown;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .second-component-first-six {
+            background-color: darkolivegreen;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="first-component">
+            <div class="first-component-left">
+                <div class="first-component-left-first">
+                    <h1>Socialbook</h1>
+                </div>
+                <div class="first-component-left-second">
+                    <div class="first-component-left-second-first">
+                        <i class="fas fa-bell"></i>
+
+                    </div>
+                    <div class="first-component-left-second-second">
+                        <i class="fas fa-comment"></i>
+
+                    </div>
+                    <div class="first-component-left-second-third">
+                        <i class="fas fa-video"></i>
+
+                    </div>
+                </div>
+            </div>
+            <div class="first-component-right">
+                <div class="first-component-right-first">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <span class="red-dot"></span>
+                        <input type="text" placeholder="Search" />
+                    </div>
+                </div>
+                <div class="first-component-right-second">
+                    <div class="profile-container">
+                        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Profile"
+                            class="profile-image" />
+                        <span class="status-dot"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="second-component">
+            <div class="second-component-first">
+                <div class="second-component-first-first">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Latest News</span>
+                </div>
+                <div class="second-component-first-second">
+
+                    <i class="fas fa-user-friends"></i>
+                    <span>Friends</span>
+                </div>
+                <div class="second-component-first-third">
+                    <i class="fas fa-users"></i>
+                    <span>Groups</span>
+                </div>
+                <div class="second-component-first-fourth">
+                    <i class="fas fa-store"></i>
+                    <span>Marketplace</span>
+                </div>
+
+                <div class="second-component-first-fifth">
+                    <i class="fas fa-tv"></i>
+                    <span>Watch</span>
+
+                </div>
+                <div class="second-component-first-six">
+                    <i class="fas fa-chevron-down"></i>
+                    <span>See More</span>
+
+                </div>
+            </div>
+
+
+            <div class="second-component-second">
+            <div class="second-component-second-first">
+
+            </div>
+            </div>
+            <div class="second-component-third">
+                c
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
