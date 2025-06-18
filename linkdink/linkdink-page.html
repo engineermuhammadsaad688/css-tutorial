@@ -43,10 +43,11 @@
 
         .first-component-second {
             background-color: purple;
+            display: flex;
+            gap: 30px;
         }
 
         .first-component-third {
-            background-color: aqua;
         }
 
         .first-component-first-first {
@@ -61,29 +62,94 @@
             height: 30px;
             width: 30px;
         }
+.search-container {
+      display: flex;
+      align-items: center;
+      background-color: #f1f1f1;
+      border-radius: 9999px;
+      padding: 8px 16px;
+      width: 250px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
 
-        .search-container {
+    .search-container input {
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 16px;
+      flex: 1;
+      margin-left: 8px;
+    }
+
+    .search-container i {
+      color: gray;
+      font-size: 16px;
+    }
+        .first-component-second-first {
+            background-color: aqua;
             display: flex;
             align-items: center;
-            background-color: #f1f1f1;
-            border-radius: 9999px;
-            padding: 8px 16px;
-            width: 250px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
 
-        .search-container input {
-            border: none;
-            outline: none;
-            background: transparent;
-            font-size: 16px;
-            flex: 1;
-            margin-left: 8px;
+        .first-component-second-second {
+            background-color: palegreen;
+            display: flex;
+            align-items: center;
         }
 
-        .search-container i {
-            color: gray;
-            font-size: 16px;
+        .first-component-second-third {
+            background-color: goldenrod;
+            display: flex;
+            align-items: center;
+        }
+
+        .first-component-second-fourth {
+            background-color: forestgreen;
+            display: flex;
+            align-items: center;
+        }
+
+        .first-component-second-fifth {
+            background-color: hotpink;
+            display: flex;
+            align-items: center;
+        }
+
+        .first-component-first-first-first {
+            background-color: olive;
+
+        }
+
+        .first-component-first-first-second {
+            background-color: blueviolet;
+        }
+
+        .first-component-first-second-first {
+            background-color: red;
+        }
+
+        .first-component-first-second-second {}
+
+        .first-component-first-third-first {}
+
+        .first-component-first-third-second {}
+
+        .first-component-first-fourth-first {}
+
+        .first-component-first-fourth-second {}
+
+        .first-component-third-first img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        .first-component-first-fifth-first {
+            background-color: darkgray;
+        }
+
+        .first-component-first-fifth-second {
+            background-color: darkseagreen;
         }
     </style>
 
@@ -104,32 +170,60 @@
 
                 </div>
                 <div class="first-component-first-second">
-                    <div class="search-container">
-                        <i class="fas fa-search"></i>
-                        <input type="text" placeholder="Search" />
-                    </div>
+  <div class="search-container">
+    <i class="fas fa-search"></i>
+    <input type="text" placeholder="Search" />
+  </div>
 
                 </div>
             </div>
             <div class="first-component-second">
                 <div class="first-component-second-first">
-
+                    <div class="first-component-first-first-first">
+                        a
+                    </div>
+                    <div class="first-component-first-first-second">
+                        b
+                    </div>
                 </div>
                 <div class="first-component-second-second">
-
+                    <div class="first-component-first-second-first">
+                        c
+                    </div>
+                    <div class="first-component-first-second-second">
+                        d
+                    </div>
                 </div>
                 <div class="first-component-second-third">
-
+                    <div class="first-component-first-third-first">
+                        e
+                    </div>
+                    <div class="first-component-first-third-second">
+                        f
+                    </div>
                 </div>
                 <div class="first-component-second-fourth">
-
+                    <div class="first-component-first-fourth-first">
+                        g
+                    </div>
+                    <div class="first-component-first-fourth-second">
+                        h
+                    </div>
                 </div>
                 <div class="first-component-second-fifth">
-
+                    <div class="first-component-first-fifth-first">
+                        a
+                    </div>
+                    <div class="first-component-first-fifth-second">
+                        b
+                    </div>
                 </div>
             </div>
             <div class="first-component-third">
-                c
+                <div class="first-component-third-first">
+                        <img src="./linkind-images/user-1.png" alt="React logo">
+
+                </div>
             </div>
         </div>
     </div>
