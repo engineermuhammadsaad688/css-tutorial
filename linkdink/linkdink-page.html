@@ -12,7 +12,7 @@
         body {
             height: 100%;
             width: 100%;
-            background-color: whitesmoke;
+            background-color: white;
             margin: 0;
             padding: 0;
         }
@@ -20,12 +20,12 @@
         .main-container {
             width: 100%;
             height: 100px;
-            background-color: antiquewhite
+            background-color: whitesmoke
         }
 
         .first-component {
             height: 100px;
-            background-color: blue;
+            background-color: white;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -35,27 +35,25 @@
         }
 
         .first-component-first {
-            background-color: burlywood;
+
             display: flex;
 
             gap: 13px;
         }
 
         .first-component-second {
-            background-color: purple;
             display: flex;
             gap: 30px;
         }
 
-        .first-component-third {}
-
-        .first-component-first-first {
-            background-color: orangered;
+        .first-component-third {
+            position: relative;
+            padding: 20px;
         }
 
-        .first-component-first-second {
-            background-color: darkgoldenrod;
-        }
+        .first-component-first-first {}
+
+        .first-component-first-second {}
 
         .first-component-first-first img {
             height: 30px;
@@ -87,44 +85,35 @@
         }
 
         .first-component-second-first {
-            background-color: aqua;
             display: flex;
             align-items: center;
         }
 
         .first-component-second-second {
-            background-color: palegreen;
             display: flex;
             align-items: center;
         }
 
         .first-component-second-third {
-            background-color: goldenrod;
             display: flex;
             align-items: center;
         }
 
         .first-component-second-fourth {
-            background-color: forestgreen;
             display: flex;
             align-items: center;
         }
 
         .first-component-second-fifth {
-            background-color: hotpink;
             display: flex;
             align-items: center;
         }
 
         .first-component-first-first-first {}
 
-        .first-component-first-first-second {
-            background-color: blueviolet;
-        }
+        .first-component-first-first-second {}
 
-        .first-component-first-second-first {
-            background-color: red;
-        }
+        .first-component-first-second-first {}
 
         .first-component-first-second-second {}
 
@@ -140,11 +129,11 @@
             height: 30px;
             width: 30px;
             border-radius: 50%;
+            cursor: pointer;
+
         }
 
-        .first-component-first-fifth-first {
-            background-color: darkgray;
-        }
+        .first-component-first-fifth-first {}
 
         .first-component-first-fifth-second {}
 
@@ -175,48 +164,152 @@
 
         .second-component {
             width: 100%;
-
             background-color: aqua;
             display: flex;
 
         }
 
         .second-component-first {
-            height: 300px;
+            height: 400px;
             width: 33.33%;
             background-color: darkred;
         }
 
         .second-component-second {
-            height: 300px;
+            height: 400px;
             width: 33.33%;
             background-color: rebeccapurple;
 
         }
 
         .second-component-third {
-            height: 300px;
-
+            height: 400px;
             width: 33.33%;
             background-color: red;
 
         }
 
+
         .second-component-first-first {
-            background-color: darkblue;
+            margin-bottom: 28px;
         }
 
-        .second-component-first-first-first {
-            background-color: peru;
-        }
+        .second-component-first-first-first {}
 
         .second-component-first-first-second {
-            background-color: #199431;
+            position: relative;
+            top: 3px;
+            left: 12px;
         }
 
-        .second-component-first-first-third {
-            background-color: #300;
+        .second-component-first-first-third {}
+
+        .second-component-first-first-first img {
+            height: 164px;
+            width: 455px;
         }
+
+        .second-component-first-first-second img {
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        .top-values {
+            position: absolute;
+            top: -80px;
+            left: 64px;
+        }
+
+        .second-component-first-second {
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .second-component-first-second-first {
+            background-color: darkblue;
+            font-weight: 1000;
+        }
+
+        .second-component-first-second-second {
+            background-color: teal;
+        }
+
+        .second-component-first-second-third {
+            background-color: tomato;
+        }
+
+        .second-component-first-second-fourth {
+            background-color: cornflowerblue;
+        }
+
+        .second-component-first-second-fifth {
+            background-color: darkslateblue;
+            border-bottom: 1px solid gray
+        }
+
+        .second-component-first-third-first {
+            background-color: cornflowerblue;
+            display: flex;
+            align-items: center;
+        }
+
+        .second-component-first-third-second {
+            background-color: dodgerblue;
+            display: flex;
+            align-items: center;
+        }
+
+        .second-component-first-third {
+            background-color: coral;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .second-component-first-third-first img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .second-component-first-third-second img {
+            height: 30px;
+            width: 30px;
+        }
+
+        .small-image {
+            height: 283px;
+            width: 190px;
+            background-color: purple;
+            position: absolute;
+            top: 60px;
+            right: 34px;
+            display: none;
+        }
+
+        .green-dot {
+            height: 10px;
+            width: 10px;
+            background-color: green;
+            border-radius: 50%;
+            margin-top: -34px;
+            margin-left: 27px;
+        }
+    
+
+        .fourth-component-first {
+                        height:400px;
+            width: 30%;
+            background-color: magenta;
+        }
+        .second-component-second-first-second{
+            height: 100px;
+            width:100%;
+            background-color: gold;
+        }
+        
     </style>
 
 
@@ -224,7 +317,12 @@
 
 </head>
 
+
+
+
+
 <body>
+
 
     <div class="main-container">
         <div class="first-component">
@@ -291,30 +389,111 @@
             </div>
             <div class="first-component-third">
                 <div class="first-component-third-first">
+
                     <img src="./linkind-images/user-1.png" alt="React logo">
 
                 </div>
+                <div class="small-image">
+                    gbdsjfh
+                </div>
+                <div class="green-dot"></div>
             </div>
+
         </div>
         <div class="second-component">
             <div class="second-component-first">
                 <div class="second-component-first-first">
                     <div class="second-component-first-first-first">
-                        a 
+                        <img src="./linkind-images/cover-pic.png" alt="React logo">
 
                     </div>
-
-
-
-                    
                     <div class="second-component-first-first-second">
-                        b
-                    </div>
-                    <div class="second-component-first-first-third">
-                        c
+
+                        <div class="top-values">
+
+                            <img src="./linkind-images/user-1.png" alt="React logo">
+                        </div>
                     </div>
                 </div>
+                <div class="second-component-first-second">
+                    <div class="second-component-first-second-first">
+                        Rayan Walton
+                    </div>
+                    <div class="second-component-first-second-second">
+                        Web Developer at Micosoft
+                    </div>
+                    <div class="second-component-first-second-third">
+                        Your profile views: 52
+                    </div>
+                    <div class="second-component-first-second-fourth">
+                        Your post views: 810
+                    </div>
+                    <div class="second-component-first-second-fifth">
+                        Your connections: 205
+                    </div>
+                    <div class="second-component-first-third">
+                        <div class="second-component-first-third-first">
+                            <div>
+                                <img src="./linkind-images/items.png" alt="React logo">
+                            </div>
+                            <div> My items</div>
+                        </div>
+                        <div class="second-component-first-third-second">
+                            <div> <img src="./linkind-images/premium.png" alt="React logo">
+                            </div>
+                            <div>Try Premium</div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <div class="second-component-second">
                 b
             </div>
@@ -323,6 +502,25 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.first-component-third').onclick = function () {
+            const smallImage = document.querySelector('.small-image');
+            smallImage.style.display = smallImage.style.display === 'none' || smallImage.style.display === ''
+                ? 'block'
+                : 'none';
+        };
+    });
+</script>
 
 </html>
