@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Activity Log Visualizer</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+    canvas {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label, select {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Activity Log Visualizer</h1>
+
+  <div class="form-group">
+    <input type="file" id="fileInput" accept=".log,.txt" />
+  </div>
+
+  <div class="form-group">
+    <label for="intervalSelect">Time Interval: </label>
+    <select id="intervalSelect">
+      <option value="3">3 minutes</option>
+      <option value="5">5 minutes</option>
+      <option value="10">10 minutes</option>
+      <option value="15" selected>15 minutes</option>
+      <option value="30">30 minutes</option>
+      <option value="60">60 minutes</option>
+    </select>
+  </div>
+
+  <h2>Mouse & Key Press Activity</h2>
+  <canvas id="activityChart"></canvas>
+
+  <h2>Focused Window Duration</h2>
+  <canvas id="windowChart"></canvas>
+
+  <h2>Interaction Slots</h2>
+  <canvas id="slotChart"></canvas>
+
+  <script>
+    const fileInput = document.getElementById("fileInput");
+    const intervalSelect = document.getElementById("intervalSelect");
+
+    let activityChart, windowChart, slotChart;
+
+    fileInput.addEventListener("change", async () => {
+      const file = fileInput.files[0];
+      if (!file) return;
+
+      const text = await file.text();
+      const interval = parseInt(intervalSelect.value);
+      const { activityGraph, focusedWindowDurations, interactionSlots } = parseLogFile(text, interval);
+
+      renderActivityChart(activityGraph);
+      renderWindowChart(focusedWindowDurations);
+      renderSlotChart(interactionSlots);
+    });
+
+    intervalSelect.addEventListener("change", () => {
+      fileInput.dispatchEvent(new Event("change"));
+    });
+
+    function parseLogFile(text, intervalInMinutes) {
+      const lines = text.split("\n").filter(line => line.trim());
+      const activityGraph = [];
+      const windowMap = new Map();
+      const slotMap = new Map();
+
+      let firstTime = null;
+
+      lines.forEach(line => {
+        const match = line.match(/^([\d-]+\s[\d:]+): Mouse Moves: (\d+), Key Presses: (\d+), Focused Window: (.*)$/);
+        if (!match) return;
+
+        const [_, timestamp, mouse, key, window] = match;
+        const date = new Date(timestamp);
+        if (!firstTime) firstTime = date;
+
+        const elapsedMin = Math.floor((date - firstTime) / 60000);
+        const bucketMin = Math.floor(elapsedMin / intervalInMinutes) * intervalInMinutes;
+        const bucketTime = new Date(firstTime.getTime() + bucketMin * 60000);
+        const bucketLabel = formatTime(bucketTime);
+
+        const mouseCount = parseInt(mouse);
+        const keyCount = parseInt(key);
+        const activity = activityGraph.find(a => a.time === bucketLabel);
+        if (activity) {
+          activity.mouse += mouseCount;
+          activity.key += keyCount;
+        } else {
+          activityGraph.push({ time: bucketLabel, mouse: mouseCount, key: keyCount });
+        }
+
+        const windowLabel = window || "Unknown";
+        windowMap.set(windowLabel, (windowMap.get(windowLabel) || 0) + intervalInMinutes);
+
+        const slotEnd = new Date(bucketTime.getTime() + intervalInMinutes * 60000);
+        const slotLabel = `${formatTime(bucketTime)} - ${formatTime(slotEnd)}`;
+        slotMap.set(slotLabel, (slotMap.get(slotLabel) || 0) + mouseCount + keyCount);
+      });
+
+      const focusedWindowDurations = Array.from(windowMap.entries()).map(([window, duration]) => ({
+        window, duration
+      }));
+
+      const interactionSlots = Array.from(slotMap.entries()).map(([slot, interaction]) => ({
+        slot, interaction
+      }));
+
+      return { activityGraph, focusedWindowDurations, interactionSlots };
+    }
+
+    function formatTime(date) {
+      const h = date.getHours() % 12 || 12;
+      const m = date.getMinutes().toString().padStart(2, "0");
+      const ampm = date.getHours() >= 12 ? "PM" : "AM";
+      return `${h}:${m} ${ampm}`;
+    }
+
+    function renderActivityChart(data) {
+      if (activityChart) activityChart.destroy();
+      const ctx = document.getElementById("activityChart").getContext("2d");
+      activityChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: data.map(d => d.time),
+          datasets: [
+            {
+              label: "Mouse Moves",
+              data: data.map(d => d.mouse),
+              backgroundColor: "green",
+            },
+            {
+              label: "Key Presses",
+              data: data.map(d => d.key),
+              backgroundColor: "pink",
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          scales: {
+            x: { stacked: true },
+            y: { stacked: true, beginAtZero: true },
+          },
+        },
+      });
+    }
+
+    function renderWindowChart(data) {
+      if (windowChart) windowChart.destroy();
+      const ctx = document.getElementById("windowChart").getContext("2d");
+      windowChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: data.map(d => d.window),
+          datasets: [{
+            label: "Duration (mins)",
+            data: data.map(d => d.duration),
+            backgroundColor: "#8884d8",
+          }],
+        },
+        options: {
+          responsive: true,
+          indexAxis: 'y',
+          scales: {
+            x: { beginAtZero: true }
+          }
+        }
+      });
+    }
+
+    function renderSlotChart(data) {
+      if (slotChart) slotChart.destroy();
+      const ctx = document.getElementById("slotChart").getContext("2d");
+      slotChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: data.map(d => d.slot),
+          datasets: [{
+            label: "Interaction",
+            data: data.map(d => d.interaction),
+            backgroundColor: "#82ca9d",
+          }],
+        },
+        options: {
+          responsive: true,
+          indexAxis: 'y',
+          scales: {
+            x: { beginAtZero: true }
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
